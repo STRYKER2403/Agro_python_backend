@@ -109,5 +109,6 @@ def articles():
     "all_links":all_links
 }
 
-if __name__ == "__main__":
-    app.run(debug=False,port='0.0.0.0')
+
+# if __name__ == "__main__":
+#     app.run(debug=False,port='0.0.0.0')
