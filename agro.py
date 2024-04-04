@@ -5,8 +5,8 @@ from flask import Flask
 url = "https://economictimes.indiatimes.com/topic/agriculture"
 url1 = "https://agmarknet.gov.in/"
 
-r = requests.get(url)
-r1 = requests.get(url1)
+r = requests.get(url,verify = False)
+r1 = requests.get(url1,verify = False)
 
 htmlContent = r.content
 htmlContent1 = r1.content
@@ -109,6 +109,6 @@ def articles():
     "all_links":all_links
 }
 
-
+# comment for deployment
 # if __name__ == "__main__":
-#     app.run(debug=False,port='0.0.0.0')
+#     app.run(debug=False,port=3001)
