@@ -56,7 +56,7 @@ for img in all_Images1:
     
 # Scraping all description
 all_desc = [] # here description
-NewsDesc = soup.find_all("div", class_="wrapLines l3")
+NewsDesc = soup.find_all("p", class_="wrapLines l3")
 
 for item in NewsDesc:
     all_desc.append(item.get_text())
